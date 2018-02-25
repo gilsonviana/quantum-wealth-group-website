@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+    font-family: 'Dosis', sans-serif;
+    color: #6a6a6a;
+}
+
+a {
+    color: inherit;
+}
+
+#page {
+
+    #frontpage {        
+        height: 100vh;
+        background: url(../src/imgs/frontpage_sm.jpg) center;
+        background-size: cover;
+
+        nav {
+            padding: 1.5rem;
+            color: #fff;
+
+            a {
+                margin: 0 .5rem;
+                text-decoration: none;
+                transition: .5s ease;
+            }
+
+            &.fixed-top {
+                background: rgba(100, 100, 100, .5);
+            }
+        }
+    }
+
+    #stock-chart-1 {
+        height: 150px;
+        background: #eee;
+        padding: 1rem 0;
+
+        & > div {
+            margin: 0 auto;
+        }
+    }
+
+    #marketing-1 {
+        height: 350px;
+        background: url('../src/imgs/marketing-1_sm.jpg') center;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+
+        h1 {
+            font-size: 300%;
+            letter-spacing: 2px;
+            text-shadow: 5px 3px 2px #222;
+            line-height: 5rem;
+
+            &:first-of-type {
+                &:after {
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    width: 50%;
+                    height: 5px;
+                    background: linear-gradient(90deg, transparent, #222 50%, transparent);
+                }
+            }
+        }
+
+        p {
+            font-size: 115%;
+        }
+
+        > div {
+            height: 100%;
+
+            .row {
+                height: 100%;
+            }
+        }
+    }
+
+    #stock-chart-2 {
+        height: 300px;
+        background: #eee;
+    }
+
+    #about-us {        
+        background: #222;
+
+        .text {
+            margin: 2rem;
+            padding: 5rem;
+            border: 1px solid #ddd;
+            color: #eee;
+        }
+
+        .row {
+
+            div:nth-child(2) {
+                background: url('../src/imgs/about-us.jpg') center;
+                background-size: cover;
+
+                .title {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 350%;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    #services {        
+        background: url('../src/imgs/services_edit.jpg') center;
+        background-size: cover;        
+
+        .row {
+            margin: 0 2rem;            
+            padding: 5rem;  
+            border: 1px solid #ddd;          
+        }
+
+        .text {
+            color: #fff;
+
+            h2 {
+                &:after {
+                    content: "";                    
+                    display: block; 
+                    margin: 2.5rem 0 1rem;                   
+                    width: 30%;
+                    height: 3px;
+                    background: goldenrod;
+                }
+            }
+        }
+    }
+}
