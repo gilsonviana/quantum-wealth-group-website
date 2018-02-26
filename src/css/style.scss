@@ -12,7 +12,7 @@ a {
 #page {
 
     #frontpage {        
-        height: 100vh;
+        height: 150vh;
         background: url(../src/imgs/frontpage_sm.jpg) center;
         background-size: cover;
         background-attachment: fixed;
@@ -31,7 +31,14 @@ a {
                 background: rgba(100, 100, 100, .5);
             }
         }
-    }
+
+        #contextual-1 {
+            position: absolute;
+            bottom: 0%;
+            text-align: center;
+            width: 100%;
+        }
+    }    
 
     #stock-chart-1 {
         height: 150px;
