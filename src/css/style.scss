@@ -34,9 +34,15 @@ a {
 
         #contextual-1 {
             position: absolute;
-            bottom: 0%;
+            bottom: -10%;
             text-align: center;
             width: 100%;
+            color: #eee;
+
+            h1 {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
         }
     }    
 

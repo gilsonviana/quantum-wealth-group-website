@@ -22,9 +22,13 @@ a {
       background: rgba(100, 100, 100, 0.5); }
   #page #frontpage #contextual-1 {
     position: absolute;
-    bottom: 0%;
+    bottom: -10%;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    color: #eee; }
+    #page #frontpage #contextual-1 h1 {
+      text-transform: uppercase;
+      font-weight: bold; }
 #page #stock-chart-1 {
   height: 150px;
   background: #eee;
