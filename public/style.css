@@ -9,7 +9,8 @@ a {
 #page #frontpage {
   height: 100vh;
   background: url(../src/imgs/frontpage_sm.jpg) center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   #page #frontpage nav {
     padding: 1.5rem;
     color: #fff; }
