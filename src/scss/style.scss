@@ -8,6 +8,7 @@
 body {
     font-family: 'Dosis', sans-serif;
     color: $pure-white;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -16,15 +17,21 @@ a {
 
 #page {
 
+    p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
     #frontpage {        
-        height: 150vh;
-        background: #222;
+        height: 100vh;
+        background: url('../src/imgs/1_banner_pic_darker.jpg');
         background-size: cover;
         background-attachment: fixed;
 
-        nav {
-            padding: 1.5rem;
+        nav {            
             color: #fff;
+            line-height: 8rem;
+            z-index: 99999;
 
             a {
                 margin: 0 .5rem;
@@ -38,13 +45,22 @@ a {
                 width: 100%;
                 background: rgba(100, 100, 100, .5);
             }
+
+            .side-left {
+                float: left;
+            }
+
+            .side-right {
+                float: right;
+            }
         }
 
         #contextual-1 {
             position: absolute;
-            bottom: -10%;
-            text-align: center;
-            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;            
             color: #eee;
 
             h1 {

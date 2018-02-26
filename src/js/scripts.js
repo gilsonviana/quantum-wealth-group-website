@@ -7,6 +7,11 @@ var stickyNavbar = function() {
         nav.classList.remove('fixed-top');
 };
 
+window.onload = function() {
+    var frontpage = document.getElementById('frontpage'),
+        imgs = ["url('../src/imgs/1_banner_pic_darker.jpg')", "url('../src/imgs/2_banner_pic_darker.jpg')", "url('../src/imgs/3_banner_pic_darker.jpg')"];
+}
+
 window.onscroll = function() {
     stickyNavbar()
 };
@@ -14,5 +19,3 @@ window.onscroll = function() {
 AOS.init({
     duration: 1200,
 });
-
-// document.addEventListener('scroll', stickyNavbar);

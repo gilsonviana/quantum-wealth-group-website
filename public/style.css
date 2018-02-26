@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 body {
   font-family: 'Dosis', sans-serif;
-  color: #fff; }
+  color: #fff;
+  text-rendering: optimizeLegibility; }
 
 a {
   color: inherit; }
 
+#page p {
+  font-size: 17px;
+  line-height: 1.5; }
 #page #frontpage {
-  height: 150vh;
-  background: #222;
+  height: 100vh;
+  background: url("../src/imgs/1_banner_pic_darker.jpg");
   background-size: cover;
   background-attachment: fixed; }
   #page #frontpage nav {
-    padding: 1.5rem;
-    color: #fff; }
+    color: #fff;
+    line-height: 8rem;
+    z-index: 99999; }
     #page #frontpage nav a {
       margin: 0 .5rem;
       text-decoration: none;
@@ -23,11 +28,16 @@ a {
       top: 0;
       width: 100%;
       background: rgba(100, 100, 100, 0.5); }
+    #page #frontpage nav .side-left {
+      float: left; }
+    #page #frontpage nav .side-right {
+      float: right; }
   #page #frontpage #contextual-1 {
     position: absolute;
-    bottom: -10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
     color: #eee; }
     #page #frontpage #contextual-1 h1 {
       text-transform: uppercase;
