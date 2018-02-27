@@ -13,10 +13,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-a {
-    color: inherit;
-}
-
 #page {
 
     p {
@@ -40,7 +36,14 @@ a {
             top: 0;
             left: 0;
             width: 100%;
-            transition: background-color .3s ease-in-out;            
+            transition: background-color .3s ease-in-out;    
+            
+            .logo-brand {
+                img {
+                    height: auto;
+                    width: 30rem;
+                }
+            }
 
             .menu-items {
                 a {
@@ -75,6 +78,7 @@ a {
                 top: 0;
                 width: 100%;
                 background-color: rgba(100, 100, 100, .5);
+                color: #eee;
             }
 
             .side-left {
@@ -99,6 +103,7 @@ a {
                 text-transform: uppercase;
                 font-weight: bold;
                 text-shadow: 1px 5px 1rem#222;
+                font-size: 3.2rem;
             }
         }
 

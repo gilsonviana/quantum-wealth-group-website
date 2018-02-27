@@ -5,9 +5,6 @@ body {
   color: #fff;
   text-rendering: optimizeLegibility; }
 
-a {
-  color: inherit; }
-
 #page p {
   font-size: 17px;
   line-height: 1.5; }
@@ -137,6 +134,9 @@ a {
     left: 0;
     width: 100%;
     transition: background-color .3s ease-in-out; }
+    #page #frontpage nav .logo-brand img {
+      height: auto;
+      width: 30rem; }
     #page #frontpage nav .menu-items a {
       margin: 0 .5rem;
       text-decoration: none;
@@ -157,7 +157,8 @@ a {
       position: fixed;
       top: 0;
       width: 100%;
-      background-color: rgba(100, 100, 100, 0.5); }
+      background-color: rgba(100, 100, 100, 0.5);
+      color: #eee; }
     #page #frontpage nav .side-left {
       float: left; }
     #page #frontpage nav .menu-items {
@@ -173,7 +174,8 @@ a {
     #page #frontpage #contextual-1 h1 {
       text-transform: uppercase;
       font-weight: bold;
-      text-shadow: 1px 5px 1rem #222; }
+      text-shadow: 1px 5px 1rem #222;
+      font-size: 3.2rem; }
   #page #frontpage #stock-chart-1 {
     position: absolute;
     width: 50%;
