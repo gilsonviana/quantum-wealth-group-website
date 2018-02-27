@@ -135,18 +135,23 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    transition: background-color .5s ease-in; }
-    #page #frontpage nav .logo-brand img {
-      width: 50%; }
-    #page #frontpage nav .side-right a {
+    transition: background-color .3s ease-in-out; }
+    #page #frontpage nav .menu-items a {
       margin: 0 .5rem;
       text-decoration: none;
       transition: .5s ease;
       font-weight: bold; }
-      #page #frontpage nav .side-right a:hover {
-        background: #ddd;
-        border-radius: 5px;
+      #page #frontpage nav .menu-items a:hover {
         color: inherit; }
+      #page #frontpage nav .menu-items a:visited {
+        color: inherit; }
+      #page #frontpage nav .menu-items a:last-child {
+        padding: 5px;
+        border: 1px solid #222;
+        border-radius: 3px; }
+        #page #frontpage nav .menu-items a:last-child:hover {
+          background: #222;
+          color: #fff; }
     #page #frontpage nav.fixed-top {
       position: fixed;
       top: 0;
@@ -154,11 +159,11 @@ a {
       background-color: rgba(100, 100, 100, 0.5); }
     #page #frontpage nav .side-left {
       float: left; }
-    #page #frontpage nav .side-right {
+    #page #frontpage nav .menu-items {
       float: right; }
   #page #frontpage #contextual-1 {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -171,7 +176,7 @@ a {
     position: absolute;
     width: 50%;
     left: 50%;
-    top: 85%;
+    top: 80%;
     transform: translate(-50%, 0); }
 #page #about-us {
   padding: 5rem 0;
