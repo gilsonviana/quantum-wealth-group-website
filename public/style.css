@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Krona+One");
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   color: #fff;
   text-rendering: optimizeLegibility; }
 
@@ -167,7 +168,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #eee; }
+    color: #eee;
+    font-family: "Krona One", sans-serif; }
     #page #frontpage #contextual-1 h1 {
       text-transform: uppercase;
       font-weight: bold;

@@ -5,9 +5,10 @@
 
 // Vendors
 @import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Krona+One');
 
 body {
-    font-family: 'Dosis', sans-serif;
+    font-family: $default-font;
     color: $pure-white;
     text-rendering: optimizeLegibility;
 }
@@ -92,6 +93,7 @@ a {
             transform: translate(-50%, -50%);
             text-align: center;            
             color: #eee;
+            font-family: $heading-font;
 
             h1 {
                 text-transform: uppercase;
