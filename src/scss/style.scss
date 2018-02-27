@@ -90,6 +90,14 @@ a {
                 text-shadow: 1px 5px 1rem#222;
             }
         }
+
+        #stock-chart-1 {
+            position: absolute;
+            width: 50%;
+            left: 50%;
+            top: 85%;
+            transform: translate(-50%, 0);
+        }
     }    
 
     #about-us {        

@@ -167,6 +167,12 @@ a {
       text-transform: uppercase;
       font-weight: bold;
       text-shadow: 1px 5px 1rem #222; }
+  #page #frontpage #stock-chart-1 {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, 0); }
 #page #about-us {
   padding: 5rem 0;
   background: #eee;
