@@ -1,0 +1,63 @@
+@mixin navbar {
+    nav {            
+        color: #222;
+        line-height: 8rem;
+        z-index: 99999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: background-color .3s ease-in-out;    
+        
+        .logo-brand {
+            img {
+                height: auto;
+                width: 30rem;
+            }
+        }
+    
+        .menu-items {
+            a {
+                margin: 0 .5rem;
+                text-decoration: none;
+                transition: .5s ease;   
+                font-weight: bold;
+                
+                &:hover {
+                    color: inherit;                    
+                }
+    
+                &:visited {
+                    color: inherit;
+                }
+    
+                &:last-child {
+                    padding: 5px;
+                    border: 1px solid #222;
+                    border-radius: 3px;
+    
+                    &:hover {
+                        background: #222;
+                        color: $pure-white;
+                    }
+                }
+            }
+        }
+    
+        &.fixed-top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(100, 100, 100, .5);
+            color: #eee;
+        }
+    
+        .side-left {
+            float: left;
+        }
+    
+        .menu-items {
+            float: right;
+        }
+    }
+}
