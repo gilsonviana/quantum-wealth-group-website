@@ -1,8 +1,3 @@
-const contactForm = document.getElementById('contact-form');
-contactForm.onsubmit = function(e) {
-    e.preventDefault();
-};
-
 var stickyNavbar = function() {
     var nav = document.getElementById('main-nav'),
         sticky = 74;
