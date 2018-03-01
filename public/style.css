@@ -1,3 +1,7 @@
+/**
+ * Author: Gilson Viana
+ * Email: vianawebdev@gmail.com
+ */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
@@ -7,7 +11,12 @@ body {
 
 .page p {
   font-size: 17px;
-  line-height: 1.5; }
+  line-height: 1.7; }
+.page h1, .page h2, .page h3, .page h4, .page h5, .page h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold; }
+.page b, .page strong {
+  color: goldenrod; }
 .page .home .sec-frontpage {
   height: 100vh;
   background: #222;
@@ -302,6 +311,103 @@ body {
       background: #0b0f11; }
   .page .contact .sec-form #contact-form {
     padding: 3rem 0; }
+.page .contact .sec-address {
+  margin: 4rem 0 10rem;
+  color: #0b0f11; }
+  .page .contact .sec-address .content h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; }
+.page .services .sec-header {
+  padding: 10rem 0;
+  background: url("../src/imgs/2_banner_pic_darker.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%; }
+  .page .services .sec-header nav {
+    line-height: 8rem;
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color .3s ease-in-out; }
+    .page .services .sec-header nav .logo-brand img {
+      height: auto;
+      width: 30rem; }
+    .page .services .sec-header nav .menu-items a {
+      margin: 0 .5rem;
+      text-decoration: none;
+      transition: .5s ease;
+      font-weight: bold;
+      color: #222; }
+      .page .services .sec-header nav .menu-items a:hover {
+        color: inherit; }
+      .page .services .sec-header nav .menu-items a:visited {
+        color: inherit; }
+      .page .services .sec-header nav .menu-items a:last-child {
+        padding: 5px;
+        border: 1px solid #222;
+        border-radius: 3px; }
+        .page .services .sec-header nav .menu-items a:last-child:hover {
+          background: #222;
+          color: #fff; }
+    .page .services .sec-header nav.fixed-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(100, 100, 100, 0.5);
+      color: #eee !important; }
+    .page .services .sec-header nav .side-left {
+      float: left; }
+    .page .services .sec-header nav .menu-items {
+      float: right; }
+  .page .services .sec-header .content h3 {
+    font-weight: normal; }
+.page .services .sec-service {
+  color: #0b0f11; }
+  .page .services .sec-service .content {
+    padding: 5rem; }
+    .page .services .sec-service .content h3 {
+      margin: 3rem 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold; }
+.page .services .sec-learn-more .content {
+  padding: 3rem 0;
+  color: #0b0f11; }
+  .page .services .sec-learn-more .content h6 {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.8px;
+    margin: 0 0 10px;
+    color: goldenrod; }
+  .page .services .sec-learn-more .content h3 {
+    margin: 10px 0 20px;
+    line-height: 1.3;
+    letter-spacing: 1.1px; }
+  .page .services .sec-learn-more .content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .page .services .sec-learn-more .content ul li {
+      margin: 1rem 0; }
+.page .services .sec-learn-more .coins img {
+  width: 100px; }
+  .page .services .sec-learn-more .coins img:last-child {
+    position: relative;
+    top: 30px;
+    left: -30px; }
+.page .services .sec-contact {
+  margin: 3rem 0 5rem; }
+  .page .services .sec-contact a {
+    display: block;
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 145px;
+    background: goldenrod;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 110%; }
 .page footer {
   background: #0b0f11;
   color: #fff;

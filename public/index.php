@@ -125,7 +125,8 @@
                     <div class="col-xs-12">
                         <div class="content text-center">
                             <h1 class="text-uppercase">start today</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae tempora fugit veritatis itaque porro voluptas nam dignissimos esse fuga, enim nobis doloribus quia harum a temporibus nesciunt earum animi pariatur!</p>
+                            <p>Please fill out the request form and someone from Quantum Wealth Group will contact you momentarily.
+                            Thank you for your interest.</p>
                             <a href="contact.php"
                                data-aos="zoom-in"
                                data-aos-anchor-placement="bottom">get in touch</a>

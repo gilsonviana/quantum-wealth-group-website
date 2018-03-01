@@ -8,8 +8,10 @@
                                 </a>          
                                 <div>
                                     <h4>Quantum Wealth Group</h4>
-                                    <p>It's the first step in securing your financial future.</p>                                
-                                </div>                      
+                                    <p>It's the first step in securing your financial future.</p>  
+                                    <p>Phone: 800-985-2510</p>                              
+                                    <p>Address: 36 mill plain road suite 403 Danbury CT 06811</p>
+                                </div>                                    
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6">

@@ -17,14 +17,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                       <div class="content">
-                       <h6>let's work together</h6>
-                        <h1>How Can We Help?</h1>
-                        <div class="line" data-aos="fade-right"></div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis maiores impedit, necessitatibus rem ex dolore
-                        </p>
-                       </div>
+                        <div class="content">
+                            <h6>let's work together</h6>
+                            <h1>How Can We Help?</h1>
+                            <div class="line" data-aos="fade-right"></div>
+                            <p>
+                                Please fill out the request form and someone from Quantum Wealth Group will contact you momentarily.
+                                Thank you for your interest.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <form id="contact-form" action="post">
@@ -49,9 +50,27 @@
                             </div>
                         </form>
                     </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="sec-address">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="content text-center"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom">
+                            <h3>Corporate Office</h3>
+                            <p>36 mill plain road suite 403 Danbury CT 06811</p>
+                            <p><span class="glyphicon glyphicon-phone"></span> 800-985-2510</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+    <!-- gold, silver, polithium, platinum, ripple -->
 
     </div>
 
