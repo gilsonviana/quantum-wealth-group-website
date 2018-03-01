@@ -37,6 +37,23 @@ body {
         color: goldenrod;
     }
 
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:link {
+            color: inherit;
+        }
+
+        &:visited {
+            color: inherit;
+        }
+
+        &:hover {
+            color: inherit;
+        }
+    }
+
     .home {
 
         .sec-frontpage {        
@@ -180,6 +197,7 @@ body {
 
         .sec-form {
             color: $dark;
+            background: linear-gradient(-45deg, #ddd, #fff);
 
             .content {
                 padding: 3rem 0;
@@ -210,8 +228,7 @@ body {
             }
         }
 
-        .sec-address {
-            margin: 4rem 0 10rem;
+        .sec-address {            
             color: $dark;
             
             .content {

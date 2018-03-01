@@ -17,6 +17,15 @@ body {
   font-weight: bold; }
 .page b, .page strong {
   color: goldenrod; }
+.page a {
+  color: inherit;
+  text-decoration: none; }
+  .page a:link {
+    color: inherit; }
+  .page a:visited {
+    color: inherit; }
+  .page a:hover {
+    color: inherit; }
 .page .home .sec-frontpage {
   height: 100vh;
   background: #222;
@@ -292,7 +301,8 @@ body {
       margin: 3rem auto;
       background: #fff; }
 .page .contact .sec-form {
-  color: #0b0f11; }
+  color: #0b0f11;
+  background: linear-gradient(-45deg, #ddd, #fff); }
   .page .contact .sec-form .content {
     padding: 3rem 0; }
     .page .contact .sec-form .content h6 {
@@ -312,7 +322,6 @@ body {
   .page .contact .sec-form #contact-form {
     padding: 3rem 0; }
 .page .contact .sec-address {
-  margin: 4rem 0 10rem;
   color: #0b0f11; }
   .page .contact .sec-address .content h3 {
     font-family: "Montserrat", sans-serif;

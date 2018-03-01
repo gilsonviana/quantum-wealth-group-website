@@ -50,25 +50,21 @@
                             </div>
                         </form>
                     </div>
-                </div>                
+                </div>                                   
             </div>
-        </section>
 
-        <section class="sec-address">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="content text-center"
+            <section class="sec-address">
+                <div class="container">
+                    <div class="content text-center"
                             data-aos="fade-up"
                             data-aos-anchor-placement="bottom">
-                            <h3>Corporate Office</h3>
-                            <p>36 mill plain road suite 403 Danbury CT 06811</p>
-                            <p><span class="glyphicon glyphicon-phone"></span> 800-985-2510</p>
-                        </div>
+                        <h3>Corporate Office</h3>
+                        <p>36 mill plain road suite 403 Danbury CT 06811</p>
+                        <p><span class="glyphicon glyphicon-phone"></span> 800-985-2510</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </section>        
 
     <!-- gold, silver, polithium, platinum, ripple -->
 
