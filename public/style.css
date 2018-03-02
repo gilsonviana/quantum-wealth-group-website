@@ -9,75 +9,115 @@ body {
   color: #fff;
   text-rendering: optimizeLegibility; }
 
-.page p {
-  font-size: 17px;
-  line-height: 1.7; }
-.page h1, .page h2, .page h3, .page h4, .page h5, .page h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold; }
-.page b, .page strong {
-  color: goldenrod; }
-.page a {
-  color: inherit;
-  text-decoration: none; }
-  .page a:link {
-    color: inherit; }
-  .page a:visited {
-    color: inherit; }
-  .page a:hover {
-    color: inherit; }
-.page .home .sec-frontpage {
-  height: 100vh;
-  background: #222;
-  background-size: cover;
-  background-attachment: fixed;
-  /* Animation for the slideshow images */ }
-  .page .home .sec-frontpage .cb-slideshow,
-  .page .home .sec-frontpage .cb-slideshow:after {
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0; }
-  .page .home .sec-frontpage .cb-slideshow:after {
-    content: '';
-    background: transparent repeat top left; }
-  .page .home .sec-frontpage .cb-slideshow li {
-    list-style: none; }
-  .page .home .sec-frontpage .cb-slideshow li span {
-    width: 100%;
-    height: 100%;
+.page {
+  color: #0b0f11; }
+  .page nav {
+    line-height: 8rem;
+    z-index: 99999;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color .3s ease-in-out; }
+    .page nav .logo-brand img {
+      height: auto;
+      width: 30rem; }
+    .page nav .menu-items a {
+      margin: 0 .5rem;
+      text-decoration: none;
+      transition: .5s ease;
+      font-weight: bold;
+      color: #222; }
+      .page nav .menu-items a:hover {
+        color: inherit; }
+      .page nav .menu-items a:visited {
+        color: inherit; }
+      .page nav .menu-items a:last-child {
+        padding: 5px;
+        border: 1px solid #222;
+        border-radius: 3px; }
+        .page nav .menu-items a:last-child:hover {
+          background: #222;
+          color: #fff; }
+    .page nav.fixed-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(100, 100, 100, 0.5);
+      color: #eee !important; }
+    .page nav .side-left {
+      float: left; }
+    .page nav .menu-items {
+      float: right; }
+  .page p {
+    font-size: 17px;
+    line-height: 1.7; }
+  .page h1, .page h2, .page h3, .page h4, .page h5, .page h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; }
+  .page b, .page strong {
+    color: goldenrod; }
+  .page a {
+    color: inherit;
+    text-decoration: none; }
+    .page a:link {
+      color: inherit; }
+    .page a:visited {
+      color: inherit; }
+    .page a:hover {
+      color: inherit; }
+  .page .home .sec-frontpage {
+    height: 100vh;
+    background: #222;
     background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
-    opacity: 0;
-    z-index: 0;
-    backface-visibility: hidden;
-    -webkit-animation: imageAnimation 36s linear infinite 0s;
-    -moz-animation: imageAnimation 36s linear infinite 0s;
-    -o-animation: imageAnimation 36s linear infinite 0s;
-    -ms-animation: imageAnimation 36s linear infinite 0s;
-    animation: imageAnimation 15s linear infinite 0s; }
-  .page .home .sec-frontpage .cb-slideshow li:nth-child(1) span {
-    background-image: url(../src/imgs/1_banner_pic.jpg); }
-  .page .home .sec-frontpage .cb-slideshow li:nth-child(2) span {
-    background-image: url(../src/imgs/2_banner_pic.jpg);
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 5s; }
-  .page .home .sec-frontpage .cb-slideshow li:nth-child(3) span {
-    background-image: url(../src/imgs/3_banner_pic.jpg);
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 10s; }
+    background-attachment: fixed;
+    /* Animation for the slideshow images */ }
+    .page .home .sec-frontpage .cb-slideshow,
+    .page .home .sec-frontpage .cb-slideshow:after {
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 0; }
+    .page .home .sec-frontpage .cb-slideshow:after {
+      content: '';
+      background: transparent repeat top left; }
+    .page .home .sec-frontpage .cb-slideshow li {
+      list-style: none; }
+    .page .home .sec-frontpage .cb-slideshow li span {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: none;
+      opacity: 0;
+      z-index: 0;
+      backface-visibility: hidden;
+      -webkit-animation: imageAnimation 36s linear infinite 0s;
+      -moz-animation: imageAnimation 36s linear infinite 0s;
+      -o-animation: imageAnimation 36s linear infinite 0s;
+      -ms-animation: imageAnimation 36s linear infinite 0s;
+      animation: imageAnimation 15s linear infinite 0s; }
+    .page .home .sec-frontpage .cb-slideshow li:nth-child(1) span {
+      background-image: url(../src/imgs/1_banner_pic.jpg); }
+    .page .home .sec-frontpage .cb-slideshow li:nth-child(2) span {
+      background-image: url(../src/imgs/2_banner_pic.jpg);
+      -webkit-animation-delay: 6s;
+      -moz-animation-delay: 6s;
+      -o-animation-delay: 6s;
+      -ms-animation-delay: 6s;
+      animation-delay: 5s; }
+    .page .home .sec-frontpage .cb-slideshow li:nth-child(3) span {
+      background-image: url(../src/imgs/3_banner_pic.jpg);
+      -webkit-animation-delay: 12s;
+      -moz-animation-delay: 12s;
+      -o-animation-delay: 12s;
+      -ms-animation-delay: 12s;
+      animation-delay: 10s; }
 @-webkit-keyframes imageAnimation {
   0% {
     opacity: 0;
@@ -143,100 +183,249 @@ body {
     opacity: 0; }
   100% {
     opacity: 0; } }
-  .page .home .sec-frontpage nav {
-    line-height: 8rem;
-    z-index: 99999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: background-color .3s ease-in-out; }
-    .page .home .sec-frontpage nav .logo-brand img {
-      height: auto;
-      width: 30rem; }
-    .page .home .sec-frontpage nav .menu-items a {
-      margin: 0 .5rem;
-      text-decoration: none;
-      transition: .5s ease;
-      font-weight: bold;
-      color: #222; }
-      .page .home .sec-frontpage nav .menu-items a:hover {
-        color: inherit; }
-      .page .home .sec-frontpage nav .menu-items a:visited {
-        color: inherit; }
-      .page .home .sec-frontpage nav .menu-items a:last-child {
-        padding: 5px;
-        border: 1px solid #222;
-        border-radius: 3px; }
-        .page .home .sec-frontpage nav .menu-items a:last-child:hover {
-          background: #222;
-          color: #fff; }
-    .page .home .sec-frontpage nav.fixed-top {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: rgba(100, 100, 100, 0.5);
-      color: #eee !important; }
-    .page .home .sec-frontpage nav .side-left {
-      float: left; }
-    .page .home .sec-frontpage nav .menu-items {
-      float: right; }
-  .page .home .sec-frontpage .contextual-1 {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #eee;
-    font-family: "Montserrat", sans-serif; }
-    .page .home .sec-frontpage .contextual-1 h1 {
-      text-transform: uppercase;
-      font-weight: bold;
-      text-shadow: 1px 5px 1rem #222;
-      font-size: 3.2rem; }
-  .page .home .sec-frontpage .stock-chart-1 {
-    display: none; }
-    @media (min-width: 1200px) {
-      .page .home .sec-frontpage .stock-chart-1 {
-        display: block;
-        position: absolute;
-        width: 50%;
-        left: 50%;
-        top: 80%;
-        transform: translate(-50%, 0); } }
-.page .home .sec-about-us {
-  padding: 5rem 0;
-  background: linear-gradient(-45deg, #ddd, #fff);
-  color: #546672; }
-  .page .home .sec-about-us .content h6 {
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 1.8px;
-    margin: 0 0 10px; }
-  .page .home .sec-about-us .content h1 {
-    margin: 10px 0 20px;
-    line-height: 1.3;
-    letter-spacing: 1.1px; }
-  .page .home .sec-about-us .content .line {
-    margin: 0 0 20px;
-    height: 3px;
-    width: 15%;
-    background: red; }
-  .page .home .sec-about-us .coins img:last-child {
-    position: relative;
-    top: 30px;
-    left: -60px; }
-.page .home .sec-contact {
-  background: url("../src/imgs/services_edit.jpg") center;
-  background-size: cover;
-  background-attachment: fixed; }
-  .page .home .sec-contact .content {
-    margin: 5rem 0; }
-    .page .home .sec-contact .content h1 {
-      font-size: 44px;
-      letter-spacing: 3px;
+    .page .home .sec-frontpage .contextual-1 {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #eee;
       font-family: "Montserrat", sans-serif; }
-    .page .home .sec-contact .content a {
+      .page .home .sec-frontpage .contextual-1 h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 1px 5px 1rem #222;
+        font-size: 3.2rem; }
+    .page .home .sec-frontpage .stock-chart-1 {
+      display: none; }
+      @media (min-width: 1200px) {
+        .page .home .sec-frontpage .stock-chart-1 {
+          display: block;
+          position: absolute;
+          width: 50%;
+          left: 50%;
+          top: 80%;
+          transform: translate(-50%, 0); } }
+  .page .home .sec-about-us {
+    padding: 5rem 0;
+    background: linear-gradient(-45deg, #ddd, #fff);
+    color: #546672; }
+    .page .home .sec-about-us .content h6 {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.8px;
+      margin: 0 0 10px; }
+    .page .home .sec-about-us .content h1 {
+      margin: 10px 0 20px;
+      line-height: 1.3;
+      letter-spacing: 1.1px; }
+    .page .home .sec-about-us .content .line {
+      margin: 0 0 20px;
+      height: 3px;
+      width: 15%;
+      background: red; }
+    .page .home .sec-about-us .coins img:last-child {
+      position: relative;
+      top: 30px;
+      left: -60px; }
+  .page .home .sec-contact {
+    background: url("../src/imgs/services_edit.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff; }
+    .page .home .sec-contact .content {
+      margin: 5rem 0; }
+      .page .home .sec-contact .content h1 {
+        font-size: 44px;
+        letter-spacing: 3px;
+        font-family: "Montserrat", sans-serif; }
+      .page .home .sec-contact .content a {
+        display: block;
+        margin: 3rem auto;
+        padding: 1rem;
+        width: 145px;
+        background: goldenrod;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 110%; }
+  .page .contact .sec-header {
+    background: url("../src/imgs/1_banner_pic.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    padding: 10rem 0; }
+    .page .contact .sec-header nav {
+      line-height: 8rem;
+      z-index: 99999;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: background-color .3s ease-in-out; }
+      .page .contact .sec-header nav .logo-brand img {
+        height: auto;
+        width: 30rem; }
+      .page .contact .sec-header nav .menu-items a {
+        margin: 0 .5rem;
+        text-decoration: none;
+        transition: .5s ease;
+        font-weight: bold;
+        color: #222; }
+        .page .contact .sec-header nav .menu-items a:hover {
+          color: inherit; }
+        .page .contact .sec-header nav .menu-items a:visited {
+          color: inherit; }
+        .page .contact .sec-header nav .menu-items a:last-child {
+          padding: 5px;
+          border: 1px solid #222;
+          border-radius: 3px; }
+          .page .contact .sec-header nav .menu-items a:last-child:hover {
+            background: #222;
+            color: #fff; }
+      .page .contact .sec-header nav.fixed-top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(100, 100, 100, 0.5);
+        color: #eee !important; }
+      .page .contact .sec-header nav .side-left {
+        float: left; }
+      .page .contact .sec-header nav .menu-items {
+        float: right; }
+    .page .contact .sec-header .content {
+      color: #fff;
+      text-shadow: 2px 0 1rem #222; }
+      .page .contact .sec-header .content h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold; }
+        .page .contact .sec-header .content h1:after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 10%;
+          margin: 3rem auto;
+          background: #fff; }
+      .page .contact .sec-header .content p {
+        font-size: 2rem;
+        font-weight: bold; }
+  .page .contact .sec-form {
+    color: #0b0f11;
+    background: linear-gradient(-45deg, #ddd, #fff); }
+    .page .contact .sec-form .content {
+      padding: 3rem 0; }
+      .page .contact .sec-form .content h6 {
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 1.8px;
+        margin: 0 0 10px; }
+      .page .contact .sec-form .content h1 {
+        margin: 10px 0 20px;
+        line-height: 1.3;
+        letter-spacing: 1.1px; }
+      .page .contact .sec-form .content .line {
+        margin: 0 0 20px;
+        height: 3px;
+        width: 15%;
+        background: #0b0f11; }
+    .page .contact .sec-form #contact-form {
+      padding: 3rem 0; }
+  .page .contact .sec-address {
+    color: #0b0f11; }
+    .page .contact .sec-address .content h3 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold; }
+  .page .services .sec-header {
+    background: url("../src/imgs/2_banner_pic.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    padding: 10rem 0; }
+    .page .services .sec-header nav {
+      line-height: 8rem;
+      z-index: 99999;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: background-color .3s ease-in-out; }
+      .page .services .sec-header nav .logo-brand img {
+        height: auto;
+        width: 30rem; }
+      .page .services .sec-header nav .menu-items a {
+        margin: 0 .5rem;
+        text-decoration: none;
+        transition: .5s ease;
+        font-weight: bold;
+        color: #222; }
+        .page .services .sec-header nav .menu-items a:hover {
+          color: inherit; }
+        .page .services .sec-header nav .menu-items a:visited {
+          color: inherit; }
+        .page .services .sec-header nav .menu-items a:last-child {
+          padding: 5px;
+          border: 1px solid #222;
+          border-radius: 3px; }
+          .page .services .sec-header nav .menu-items a:last-child:hover {
+            background: #222;
+            color: #fff; }
+      .page .services .sec-header nav.fixed-top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(100, 100, 100, 0.5);
+        color: #eee !important; }
+      .page .services .sec-header nav .side-left {
+        float: left; }
+      .page .services .sec-header nav .menu-items {
+        float: right; }
+    .page .services .sec-header .content {
+      color: #fff;
+      text-shadow: 2px 0 1rem #222; }
+      @media (max-width: 599px) {
+        .page .services .sec-header .content h1, .page .services .sec-header .content h3 {
+          font-size: 2rem; } }
+      .page .services .sec-header .content h3 {
+        font-weight: normal; }
+  .page .services .sec-service {
+    color: #0b0f11; }
+    .page .services .sec-service .content {
+      padding: 5rem; }
+      @media (max-width: 599px) {
+        .page .services .sec-service .content {
+          padding: 0; } }
+      .page .services .sec-service .content h3 {
+        margin: 3rem 0;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold; }
+  .page .services .sec-learn-more .content {
+    padding: 3rem 0;
+    color: #0b0f11; }
+    .page .services .sec-learn-more .content h6 {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1.8px;
+      margin: 0 0 10px;
+      color: goldenrod; }
+    .page .services .sec-learn-more .content h3 {
+      margin: 10px 0 20px;
+      line-height: 1.3;
+      letter-spacing: 1.1px; }
+    .page .services .sec-learn-more .content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .page .services .sec-learn-more .content ul li {
+        margin: 1rem 0; }
+  .page .services .sec-learn-more .coins img {
+    width: 100px; }
+    .page .services .sec-learn-more .coins img:last-child {
+      position: relative;
+      top: 30px;
+      left: -30px; }
+  .page .services .sec-contact {
+    margin: 3rem 0 5rem; }
+    .page .services .sec-contact a {
       display: block;
       margin: 3rem auto;
       padding: 1rem;
@@ -246,268 +435,100 @@ body {
       color: #fff;
       font-weight: bold;
       font-size: 110%; }
-.page .contact .sec-header {
-  padding: 10rem 0;
-  background: url("../src/imgs/1_banner_pic_darker.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50% 50%; }
-  .page .contact .sec-header nav {
-    line-height: 8rem;
-    z-index: 99999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: background-color .3s ease-in-out; }
-    .page .contact .sec-header nav .logo-brand img {
-      height: auto;
-      width: 30rem; }
-    .page .contact .sec-header nav .menu-items a {
-      margin: 0 .5rem;
-      text-decoration: none;
-      transition: .5s ease;
-      font-weight: bold;
-      color: #222; }
-      .page .contact .sec-header nav .menu-items a:hover {
-        color: inherit; }
-      .page .contact .sec-header nav .menu-items a:visited {
-        color: inherit; }
-      .page .contact .sec-header nav .menu-items a:last-child {
-        padding: 5px;
-        border: 1px solid #222;
-        border-radius: 3px; }
-        .page .contact .sec-header nav .menu-items a:last-child:hover {
-          background: #222;
-          color: #fff; }
-    .page .contact .sec-header nav.fixed-top {
-      position: fixed;
+  .page .about-us .sec-header {
+    background: url("../src/imgs/3_banner_pic.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    padding: 10rem 0; }
+    .page .about-us .sec-header nav {
+      line-height: 8rem;
+      z-index: 99999;
+      position: absolute;
       top: 0;
+      left: 0;
       width: 100%;
-      background-color: rgba(100, 100, 100, 0.5);
-      color: #eee !important; }
-    .page .contact .sec-header nav .side-left {
-      float: left; }
-    .page .contact .sec-header nav .menu-items {
-      float: right; }
-  .page .contact .sec-header .content h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold; }
-    .page .contact .sec-header .content h1:after {
-      content: "";
-      display: block;
-      height: 3px;
-      width: 10%;
-      margin: 3rem auto;
-      background: #fff; }
-.page .contact .sec-form {
-  color: #0b0f11;
-  background: linear-gradient(-45deg, #ddd, #fff); }
-  .page .contact .sec-form .content {
-    padding: 3rem 0; }
-    .page .contact .sec-form .content h6 {
-      text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 1.8px;
-      margin: 0 0 10px; }
-    .page .contact .sec-form .content h1 {
-      margin: 10px 0 20px;
-      line-height: 1.3;
-      letter-spacing: 1.1px; }
-    .page .contact .sec-form .content .line {
-      margin: 0 0 20px;
-      height: 3px;
-      width: 15%;
-      background: #0b0f11; }
-  .page .contact .sec-form #contact-form {
-    padding: 3rem 0; }
-.page .contact .sec-address {
-  color: #0b0f11; }
-  .page .contact .sec-address .content h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold; }
-.page .services .sec-header {
-  padding: 10rem 0;
-  background: url("../src/imgs/2_banner_pic_darker.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50% 50%; }
-  .page .services .sec-header nav {
-    line-height: 8rem;
-    z-index: 99999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: background-color .3s ease-in-out; }
-    .page .services .sec-header nav .logo-brand img {
-      height: auto;
-      width: 30rem; }
-    .page .services .sec-header nav .menu-items a {
-      margin: 0 .5rem;
-      text-decoration: none;
-      transition: .5s ease;
-      font-weight: bold;
-      color: #222; }
-      .page .services .sec-header nav .menu-items a:hover {
-        color: inherit; }
-      .page .services .sec-header nav .menu-items a:visited {
-        color: inherit; }
-      .page .services .sec-header nav .menu-items a:last-child {
-        padding: 5px;
-        border: 1px solid #222;
-        border-radius: 3px; }
-        .page .services .sec-header nav .menu-items a:last-child:hover {
-          background: #222;
-          color: #fff; }
-    .page .services .sec-header nav.fixed-top {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: rgba(100, 100, 100, 0.5);
-      color: #eee !important; }
-    .page .services .sec-header nav .side-left {
-      float: left; }
-    .page .services .sec-header nav .menu-items {
-      float: right; }
-  .page .services .sec-header .content h3 {
-    font-weight: normal; }
-.page .services .sec-service {
-  color: #0b0f11; }
-  .page .services .sec-service .content {
-    padding: 5rem; }
-    .page .services .sec-service .content h3 {
-      margin: 3rem 0;
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold; }
-.page .services .sec-learn-more .content {
-  padding: 3rem 0;
-  color: #0b0f11; }
-  .page .services .sec-learn-more .content h6 {
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 1.8px;
-    margin: 0 0 10px;
-    color: goldenrod; }
-  .page .services .sec-learn-more .content h3 {
-    margin: 10px 0 20px;
-    line-height: 1.3;
-    letter-spacing: 1.1px; }
-  .page .services .sec-learn-more .content ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .page .services .sec-learn-more .content ul li {
-      margin: 1rem 0; }
-.page .services .sec-learn-more .coins img {
-  width: 100px; }
-  .page .services .sec-learn-more .coins img:last-child {
-    position: relative;
-    top: 30px;
-    left: -30px; }
-.page .services .sec-contact {
-  margin: 3rem 0 5rem; }
-  .page .services .sec-contact a {
-    display: block;
-    margin: 3rem auto;
-    padding: 1rem;
-    width: 145px;
-    background: goldenrod;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 110%; }
-.page .about-us .sec-header {
-  padding: 10rem 0;
-  background: url("../src/imgs/3_banner_pic_darker.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50% 50%; }
-  .page .about-us .sec-header nav {
-    line-height: 8rem;
-    z-index: 99999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: background-color .3s ease-in-out; }
-    .page .about-us .sec-header nav .logo-brand img {
-      height: auto;
-      width: 30rem; }
-    .page .about-us .sec-header nav .menu-items a {
-      margin: 0 .5rem;
-      text-decoration: none;
-      transition: .5s ease;
-      font-weight: bold;
-      color: #222; }
-      .page .about-us .sec-header nav .menu-items a:hover {
-        color: inherit; }
-      .page .about-us .sec-header nav .menu-items a:visited {
-        color: inherit; }
-      .page .about-us .sec-header nav .menu-items a:last-child {
-        padding: 5px;
-        border: 1px solid #222;
-        border-radius: 3px; }
-        .page .about-us .sec-header nav .menu-items a:last-child:hover {
-          background: #222;
-          color: #fff; }
-    .page .about-us .sec-header nav.fixed-top {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: rgba(100, 100, 100, 0.5);
-      color: #eee !important; }
-    .page .about-us .sec-header nav .side-left {
-      float: left; }
-    .page .about-us .sec-header nav .menu-items {
-      float: right; }
-.page .about-us .sec-about {
-  color: #0b0f11; }
-  .page .about-us .sec-about .wrapper {
-    background: #ddd;
-    padding: 2rem 0;
-    border-radius: 3px; }
-  .page .about-us .sec-about .content {
-    padding: 5rem; }
-    .page .about-us .sec-about .content h3 {
-      margin: 3rem 0;
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold; }
-.page .about-us .sec-offices {
-  margin: 0 0 10rem;
-  color: #0b0f11; }
-  .page .about-us .sec-offices h1 {
-    font-weight: normal; }
-  .page .about-us .sec-offices .line {
-    width: 10%;
-    height: 3px;
-    background: #0b0f11;
-    margin: 3rem auto; }
-.page footer {
-  background: #0b0f11;
-  color: #fff;
-  padding: 3rem 0; }
-  .page footer img {
-    width: 30px; }
-  .page footer p {
-    font-size: 13px; }
-  .page footer .first-col {
-    display: flex; }
-    .page footer .first-col div {
-      margin-left: 1rem; }
-  .page footer .footer-links {
-    text-align: right; }
-    @media (max-width: 599px) {
-      .page footer .footer-links {
-        text-align: center; }
-        .page footer .footer-links ul {
-          margin: 0;
-          padding: 0; } }
-    .page footer .footer-links ul {
-      list-style: none; }
-      .page footer .footer-links ul li a {
-        color: inherit; }
-      .page footer .footer-links ul li:first-child {
+      transition: background-color .3s ease-in-out; }
+      .page .about-us .sec-header nav .logo-brand img {
+        height: auto;
+        width: 30rem; }
+      .page .about-us .sec-header nav .menu-items a {
+        margin: 0 .5rem;
+        text-decoration: none;
+        transition: .5s ease;
+        font-weight: bold;
+        color: #222; }
+        .page .about-us .sec-header nav .menu-items a:hover {
+          color: inherit; }
+        .page .about-us .sec-header nav .menu-items a:visited {
+          color: inherit; }
+        .page .about-us .sec-header nav .menu-items a:last-child {
+          padding: 5px;
+          border: 1px solid #222;
+          border-radius: 3px; }
+          .page .about-us .sec-header nav .menu-items a:last-child:hover {
+            background: #222;
+            color: #fff; }
+      .page .about-us .sec-header nav.fixed-top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(100, 100, 100, 0.5);
+        color: #eee !important; }
+      .page .about-us .sec-header nav .side-left {
+        float: left; }
+      .page .about-us .sec-header nav .menu-items {
+        float: right; }
+    .page .about-us .sec-header .content {
+      color: #fff;
+      text-shadow: 2px 0 1rem #222; }
+  .page .about-us .sec-about {
+    color: #0b0f11; }
+    .page .about-us .sec-about .wrapper {
+      background: #ddd;
+      padding: 2rem 0;
+      border-radius: 3px; }
+    .page .about-us .sec-about .content {
+      padding: 5rem; }
+      .page .about-us .sec-about .content h3 {
+        margin: 3rem 0;
+        font-family: "Montserrat", sans-serif;
         font-weight: bold; }
+  .page .about-us .sec-offices {
+    margin: 0 0 10rem;
+    color: #0b0f11; }
+    .page .about-us .sec-offices h1 {
+      font-weight: normal; }
+    .page .about-us .sec-offices .line {
+      width: 10%;
+      height: 3px;
+      background: #0b0f11;
+      margin: 3rem auto; }
+  .page footer {
+    background: #0b0f11;
+    color: #fff;
+    padding: 3rem 0; }
+    .page footer img {
+      width: 30px; }
+    .page footer p {
+      font-size: 13px; }
+    .page footer .first-col {
+      display: flex; }
+      .page footer .first-col div {
+        margin-left: 1rem; }
+    .page footer .footer-links {
+      text-align: right; }
+      @media (max-width: 599px) {
+        .page footer .footer-links {
+          text-align: center; }
+          .page footer .footer-links ul {
+            margin: 0;
+            padding: 0; } }
+      .page footer .footer-links ul {
+        list-style: none; }
+        .page footer .footer-links ul li a {
+          color: inherit; }
+        .page footer .footer-links ul li:first-child {
+          font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

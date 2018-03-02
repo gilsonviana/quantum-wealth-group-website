@@ -2,9 +2,7 @@
     
     <div class="about-us">
 
-        <section class="sec-header">
-            <?php include('partials/navbar.php'); ?>
-
+        <section class="sec-header">            
             <div class="container">
                 <div class="content text-center">
                     <h1 class="text-uppercase">We help you achieve your financial goals</h1>                                                            

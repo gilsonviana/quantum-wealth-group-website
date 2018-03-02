@@ -7,9 +7,7 @@
                 <li><span></span></li>
                 <li><span></span></li>
                 <li><span></span></li>
-            </ul>   
-                        
-            <?php include('partials/navbar.php'); ?>
+            </ul>                           
 
             <div class="contextual-1">                         
                 <h1 

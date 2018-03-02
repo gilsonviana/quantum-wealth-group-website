@@ -1,0 +1,6 @@
+@mixin banner($url) {
+    background: url($url);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%; 
+}

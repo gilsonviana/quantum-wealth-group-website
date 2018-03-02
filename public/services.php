@@ -2,8 +2,7 @@
     
     <div class="services">
 
-        <section class="sec-header">
-            <?php include('partials/navbar.php'); ?>
+        <section class="sec-header">            
 
             <div class="container">
                 <div class="content text-center">

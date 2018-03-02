@@ -33,3 +33,4 @@ function getPageTitle() {
 <body>   
 
     <main class="page">
+        <?php include('partials/navbar.php'); ?>

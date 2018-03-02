@@ -50,6 +50,7 @@
 
         </main><!-- /page -->
 
+        <script src="../node_modules/axios/dist/axios.min.js"></script>
         <script src="../node_modules/aos/dist/aos.js"></script>
         <script src="../src/js/scripts.js"></script>
     </body>

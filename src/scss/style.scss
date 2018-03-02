@@ -8,10 +8,9 @@
 @import 'mixins/breakpoints';
 @import 'mixins/background-transition';
 @import 'mixins/navbar';
+@import 'mixins/banner';
 
 // Vendors
-// @import url('https://fonts.googleapis.com/css?family=Dosis');
-// @import url('https://fonts.googleapis.com/css?family=Krona+One');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
@@ -22,6 +21,9 @@ body {
 }
 
 .page {
+    color: $dark;
+
+    @include navbar;
 
     p {
         font-size: 17px;
@@ -62,9 +64,7 @@ body {
             background-size: cover;
             background-attachment: fixed;
             
-            @include slideshow;            
-    
-            @include navbar;
+            @include slideshow;                        
 
             .contextual-1 {
                 position: absolute;
@@ -141,7 +141,8 @@ body {
         .sec-contact {        
             background: url('../src/imgs/services_edit.jpg') center;
             background-size: cover;   
-            background-attachment: fixed;           
+            background-attachment: fixed;        
+            color: $pure-white;   
             
             .content {
                 margin: 5rem 0;
@@ -171,14 +172,13 @@ body {
 
         .sec-header {
             @include navbar;
-            
+            @include banner('../src/imgs/1_banner_pic.jpg');
             padding: 10rem 0;
-            background: url('../src/imgs/1_banner_pic_darker.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: 50% 50%;
 
             .content {
+                color: $pure-white;
+                text-shadow: 2px 0 1rem #222;
+
                 h1 {
                     font-family: $heading-font;
                     font-weight: bold;
@@ -191,6 +191,11 @@ body {
                         margin: 3rem auto;
                         background: $pure-white;
                     }
+                }
+
+                p {
+                    font-size: 2rem;
+                    font-weight: bold;
                 }
             }
         }
@@ -244,14 +249,18 @@ body {
 
         .sec-header {
             @include navbar;
-
+            @include banner('../src/imgs/2_banner_pic.jpg');
             padding: 10rem 0;
-            background: url('../src/imgs/2_banner_pic_darker.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: 50% 50%;
 
             .content {
+                color: $pure-white;
+                text-shadow: 2px 0 1rem #222;
+
+                @include for-phone-only {
+                    h1, h3 {
+                        font-size: 2rem;
+                    }
+                }
 
                 h3 {
                     font-weight: normal;
@@ -264,6 +273,10 @@ body {
 
             .content {
                 padding: 5rem;
+
+                @include for-phone-only {
+                    padding: 0;
+                }
 
                 h3 {
                     margin: 3rem 0;
@@ -338,12 +351,13 @@ body {
 
         .sec-header {
             @include navbar;
-
-            padding: 10rem 0;
-            background: url('../src/imgs/3_banner_pic_darker.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: 50% 50%;
+            @include banner('../src/imgs/3_banner_pic.jpg');
+            padding: 10rem 0;       
+            
+            .content {
+                color: $pure-white;
+                text-shadow: 2px 0 1rem #222;
+            }
         }
 
         .sec-about {

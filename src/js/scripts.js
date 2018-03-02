@@ -1,21 +1,37 @@
-var stickyNavbar = function() {
-    var nav = document.getElementById('main-nav'),
-        sticky = 74;
+const contactForm = document.getElementById('contact-form');
 
-    (window.pageYOffset >= sticky) ?
-        nav.classList.add('fixed-top') :
-        nav.classList.remove('fixed-top');
+const contactFormHandler = function(e) {
+    e.preventDefault();
+
+    const reg = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    const { name, email, phone, message } = this.contactForm.elements;
+
+    if (!phone.value.match(reg)) return false;
+    if (message.length > 500) return false;
+
+    alert();
+
+    console.log(e);
 };
 
-window.onload = function() {
-    var frontpage = document.getElementById('frontpage'),
-        imgs = ["url('../src/imgs/1_banner_pic_darker.jpg')", "url('../src/imgs/2_banner_pic_darker.jpg')", "url('../src/imgs/3_banner_pic_darker.jpg')"];
-}
+const navbar = document.getElementById('main-nav');
 
-window.onscroll = function() {
-    stickyNavbar()
+const navbarSticky = function() {
+    const pos = 74;
+
+    (window.pageYOffset >= pos) ?
+        navbar.classList.add('fixed-top') :
+        navbar.classList.remove('fixed-top');
 };
 
 AOS.init({
     duration: 1200,
-});
+});     
+
+window.onscroll = function() {
+    navbarSticky();
+}
+
+contactForm.onsubmit = function() {
+    contactFormHandler();
+}
