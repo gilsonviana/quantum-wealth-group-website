@@ -5,7 +5,10 @@
                 <img src="../src/imgs/logo.png" alt="LOGO">
             </a>
         </div>
-        <div class="menu-items">
+        <button id="collapse-trigger">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <div id="menu-items">
             <a href="index.php">home</a>
             <a href="about-us.php">about us</a>
             <a href="services.php">services</a>

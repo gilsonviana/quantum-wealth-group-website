@@ -31,8 +31,7 @@
                     <div class="wpb_wrapper" 
                     data-aos="fade-up"
                     data-aos-duration="5000"
-                    data-aos-delay="5000">
-                            <!-- TradingView Widget BEGIN -->
+                    data-aos-delay="5000">                            
                 
                 <div style="width: 100%; height: 104px;"><style>
                     .tradingview-widget-copyright {
@@ -69,8 +68,8 @@
                         color: #3bb3e4 !important;
                     }
                     </style><iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/tickerswidgetembed/#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BITFINEX%3ABTCUSD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BITFINEX%3AETHUSD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BITFINEX%3ALTCUSD%22%7D%5D%2C%22locale%22%3A%22en%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A104%2C%22utm_source%22%3A%22paradigmdynamic.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22tickers%22%7D" style="box-sizing: border-box; height: calc(72px); width: 100%;"></iframe><div style="height: 32px; line-height: 32px; width: 100%; text-align: center; vertical-align: middle;"><a ref="nofollow noopener" target="_blank" href="http://www.tradingview.com" style="color: rgb(173, 174, 176); font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif; font-size: 13px;">Quotes by <span style="color: #3BB3E4">TradingView</span></a></div></div>
-                <!-- TradingView Widget END -->
-                        </div>
+                    
+                </div>
             </div>
         </section>
 

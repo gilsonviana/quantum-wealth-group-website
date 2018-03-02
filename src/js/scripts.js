@@ -1,4 +1,9 @@
 const contactForm = document.getElementById('contact-form');
+const collapseBtn = document.getElementById('collapse-trigger');
+
+collapseBtn.onclick = function() {
+    document.getElementById('menu-items').classList.toggle('show');
+}
 
 const navbar = document.getElementById('main-nav');
 
