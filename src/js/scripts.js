@@ -37,7 +37,10 @@ contactForm.onsubmit = function(e) {
         message: message.value.trim()
     };
 
-    $.post('../email.php', data).done(function(data) {
-        console.log(data);
-    })
+    if (data.email !== '') {
+        $.post('../email.php', data).done(function(data) {
+            contactForm.reset();
+        })
+    }
+
 };
