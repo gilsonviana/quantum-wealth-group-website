@@ -8,8 +8,7 @@
                                 </a>          
                                 <div>
                                     <h4>Quantum Wealth Group</h4>
-                                    <p>It's the first step in securing your financial future.</p>  
-                                    <p>Phone: 800-985-2510</p>                              
+                                    <p>It's the first step in securing your financial future.</p>                                      
                                     <p>Address: 36 mill plain road suite 403 Danbury CT 06811</p>
                                 </div>                                    
                             </div>
@@ -30,10 +29,22 @@
                                     <li>
                                         <a href="contact.php">Contact</a>
                                     </li>
-                                </ul>
+                                </ul>                                
                             </div>
-                        </div>                    
-                    </div>
+                        </div>                                            
+                        <div class="col-sm-12">
+                            <hr>                            
+                            <p class="text-center">Quantum Wealth Group Inc. | New York | Danbury | Chicago | Miami | San Francisco</p>                            
+                            <div class="text-center">
+                                <a href="quantwealthgroup.com" rel="noopener" taget="_blank">www.quantwealthgroup.com</a> | (800) 985-2510
+                            </div>
+                        </div>
+                    </div>                
+                    <!-- <div class="row">
+                        <div class="col-xs-12">
+                            Quantum Wealth Group Inc. | New York | Danbury | Chicago | Miami | San Francisco
+                        </div>
+                    </div> -->
                 </div>
             </footer>
 

@@ -334,6 +334,55 @@ body {
         }
     }
 
+    .about-us {
+
+        .sec-header {
+            @include navbar;
+
+            padding: 10rem 0;
+            background: url('../src/imgs/3_banner_pic_darker.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: 50% 50%;
+        }
+
+        .sec-about {
+            color: $dark;
+
+            .wrapper {
+                background: #ddd;
+                padding: 2rem 0;
+                border-radius: 3px;
+            }
+
+            .content {
+                padding: 5rem;
+
+                h3 {
+                    margin: 3rem 0;
+                    font-family: $heading-font;
+                    font-weight: bold;                
+                }
+            }
+        }
+
+        .sec-offices {
+            margin: 0 0 10rem;
+            color: $dark;
+            
+            h1 {
+                font-weight: normal;
+            }
+            .line {
+                width: 10%;
+                height: 3px;
+                background: $dark;
+                margin: 3rem auto;
+            }
+        }
+
+    }
+
     footer {
         background: $dark;
         color: $pure-white;

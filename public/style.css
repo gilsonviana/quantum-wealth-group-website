@@ -417,6 +417,72 @@ body {
     color: #fff;
     font-weight: bold;
     font-size: 110%; }
+.page .about-us .sec-header {
+  padding: 10rem 0;
+  background: url("../src/imgs/3_banner_pic_darker.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%; }
+  .page .about-us .sec-header nav {
+    line-height: 8rem;
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color .3s ease-in-out; }
+    .page .about-us .sec-header nav .logo-brand img {
+      height: auto;
+      width: 30rem; }
+    .page .about-us .sec-header nav .menu-items a {
+      margin: 0 .5rem;
+      text-decoration: none;
+      transition: .5s ease;
+      font-weight: bold;
+      color: #222; }
+      .page .about-us .sec-header nav .menu-items a:hover {
+        color: inherit; }
+      .page .about-us .sec-header nav .menu-items a:visited {
+        color: inherit; }
+      .page .about-us .sec-header nav .menu-items a:last-child {
+        padding: 5px;
+        border: 1px solid #222;
+        border-radius: 3px; }
+        .page .about-us .sec-header nav .menu-items a:last-child:hover {
+          background: #222;
+          color: #fff; }
+    .page .about-us .sec-header nav.fixed-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(100, 100, 100, 0.5);
+      color: #eee !important; }
+    .page .about-us .sec-header nav .side-left {
+      float: left; }
+    .page .about-us .sec-header nav .menu-items {
+      float: right; }
+.page .about-us .sec-about {
+  color: #0b0f11; }
+  .page .about-us .sec-about .wrapper {
+    background: #ddd;
+    padding: 2rem 0;
+    border-radius: 3px; }
+  .page .about-us .sec-about .content {
+    padding: 5rem; }
+    .page .about-us .sec-about .content h3 {
+      margin: 3rem 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold; }
+.page .about-us .sec-offices {
+  margin: 0 0 10rem;
+  color: #0b0f11; }
+  .page .about-us .sec-offices h1 {
+    font-weight: normal; }
+  .page .about-us .sec-offices .line {
+    width: 10%;
+    height: 3px;
+    background: #0b0f11;
+    margin: 3rem auto; }
 .page footer {
   background: #0b0f11;
   color: #fff;
