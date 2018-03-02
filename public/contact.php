@@ -25,19 +25,19 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <form id="contact-form" method="post">
+                    <div class="col-xs-12 col-sm-6">                        
+                        <form id="contact-form">
                             <div class="form-group">
                                 <label>Name</label>
-                                <input type="text" class="form-control" name="name">                               
+                                <input type="text" class="form-control" name="name" maxlength="120">                               
                             </div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control" name="email">                               
+                                <input type="email" class="form-control" name="email" maxlength="120">                               
                             </div>
                             <div class="form-group">
                                 <label>Phone</label>
-                                <input type="text" class="form-control" name="phone" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" title="US phone" placeholder="xxx xxx xxxx">                               
+                                <input type="text" class="form-control" name="phone" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" title="US phone" placeholder="xxx xxx xxxx">                                
                             </div>
                             <div class="form-group">
                                 <label>Message</label>

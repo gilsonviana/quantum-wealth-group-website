@@ -1,19 +1,5 @@
 const contactForm = document.getElementById('contact-form');
 
-const contactFormHandler = function(e) {
-    e.preventDefault();
-
-    const reg = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-    const { name, email, phone, message } = this.contactForm.elements;
-
-    if (!phone.value.match(reg)) return false;
-    if (message.length > 500) return false;
-
-    alert();
-
-    console.log(e);
-};
-
 const navbar = document.getElementById('main-nav');
 
 const navbarSticky = function() {
@@ -30,8 +16,23 @@ AOS.init({
 
 window.onscroll = function() {
     navbarSticky();
-}
+};
 
-contactForm.onsubmit = function() {
-    contactFormHandler();
-}
+contactForm.onsubmit = function(e) {
+    e.preventDefault();
+
+    const reg = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    
+    const { name, email, phone, message } = this.elements;        
+
+    const data = {
+        name: name.value.trim(),
+        email: email.value.trim(),
+        phone: phone.value,
+        message: message.value.trim()
+    };
+
+    $.post('../email.php', data).done(function(data) {
+        console.log(data);
+    })
+};
