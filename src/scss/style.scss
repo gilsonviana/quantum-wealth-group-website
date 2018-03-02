@@ -367,10 +367,19 @@ body {
                 background: #ddd;
                 padding: 2rem 0;
                 border-radius: 3px;
+
+                img {
+                    @include for-phone-only {
+                        width: 100%;
+                    }
+                }
             }
 
             .content {
                 padding: 5rem;
+                @include for-phone-only {
+                    padding: 0;
+                }
 
                 h3 {
                     margin: 3rem 0;
@@ -392,6 +401,12 @@ body {
                 height: 3px;
                 background: $dark;
                 margin: 3rem auto;
+            }
+
+            img {
+                @include for-phone-only {
+                    width: 100%;
+                }
             }
         }
 

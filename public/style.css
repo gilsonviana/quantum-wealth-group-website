@@ -584,8 +584,14 @@ body {
       background: #ddd;
       padding: 2rem 0;
       border-radius: 3px; }
+      @media (max-width: 599px) {
+        .page .about-us .sec-about .wrapper img {
+          width: 100%; } }
     .page .about-us .sec-about .content {
       padding: 5rem; }
+      @media (max-width: 599px) {
+        .page .about-us .sec-about .content {
+          padding: 0; } }
       .page .about-us .sec-about .content h3 {
         margin: 3rem 0;
         font-family: "Montserrat", sans-serif;
@@ -600,6 +606,9 @@ body {
       height: 3px;
       background: #0b0f11;
       margin: 3rem auto; }
+    @media (max-width: 599px) {
+      .page .about-us .sec-offices img {
+        width: 100%; } }
   .page footer {
     background: #0b0f11;
     color: #fff;
