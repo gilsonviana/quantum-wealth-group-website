@@ -93,7 +93,12 @@ body {
                     left: 50%;
                     top: 80%;
                     transform: translate(-50%, 0);
-                }                
+                }  
+                
+                #marquee-container {
+                    padding: 1rem;
+                    border-radius: 3px;
+                }
             }
         }    
     

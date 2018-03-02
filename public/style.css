@@ -230,6 +230,9 @@ body {
           left: 50%;
           top: 80%;
           transform: translate(-50%, 0); } }
+      .page .home .sec-frontpage .stock-chart-1 #marquee-container {
+        padding: 1rem;
+        border-radius: 3px; }
   .page .home .sec-about-us {
     padding: 5rem 0;
     background: linear-gradient(-45deg, #ddd, #fff);

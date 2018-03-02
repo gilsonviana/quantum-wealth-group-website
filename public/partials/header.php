@@ -29,6 +29,7 @@ function getPageTitle() {
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="style.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>   
 

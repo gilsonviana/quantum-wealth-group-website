@@ -14,5 +14,5 @@
             <a href="services.php">services</a>
             <a href="contact.php">contact</a>
         </div>                                                                    
-    </div>    
+    </div>        
 </nav>
