@@ -18,10 +18,43 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="content">
-                            <h3 class="text-uppercase text-center">What move us</h3>
+                            <h3 class="text-uppercase text-center">our services</h3>
                             <p class="lead">Diversification is an essential risk management tool when it comes to preserving your investment portfolio. Stocks rise and stock fall so having something to balance out the market dips and dodges can make all the difference. Investing in precious metals like physical <strong>gold</strong> and silver helps hedgers achieve a sense of stability in unstable markets. Speculators can also engage in <strong>profitable short term</strong> metal trading by taking advantage of fluctuating commodities prices. Whether your aim is to capture quick gains or reduce risk, a precious metals investment can help you meet your financial goals. One of the best things about precious metals investing is that there is a way for everyone to get involved, from the sophisticated day trader to the casual collector of physical metals.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-items">
+            <div class="container">
+                <div class="content" data-aos="fade-up">
+                    <h3>ALL METALS PURCHASED THROUGH QUANTUM ARE GUARANTEED LBMA, COMEX, ISO 9001 CERTIFIED.</h3>
+                    <ul>
+                        <li>Purchase physical metal in any denomination</li>
+                        <li>All physical metal is fully insured transported and stored through BRINKS</li>
+                        <li>Stored Bullion</li>
+                        <li>Stored Coins</li>
+                        <li>
+    Physical Delivery of your bullion or coins will be shipped to you in a discrete packaging and is fully insured against loss, damage and theft to give you the peace of mind you deserve.</li>
+                    </ul>
+                </div>
+                <div class="content" data-aos="fade-up">
+                    <h3>RETIREMENT ACCOUNTS / TAX QUALIFIED PLANS</h3>
+                    <p>
+                        Investors are permitted to purchase physical metal in most tax qualified plans. The tax qualified account types which Quantum services are the following:
+                    </p>
+                    <p class="well">
+                        Traditional Retirement Accounts<br/>
+                        Individual Retirement Account- IRA<br/>
+                        Simplified Employee Pension- SEP IRA<br/>
+                        Roth IRA<br/>
+                        401k<br/>
+                        Pension Plans
+                    </p>
+                    <p>
+                        Investors are permitted to rollover an existing IRA or 401K from a current custodian to Quantum with absolutely no tax consequences or penalties. Please be sure to be extremely diligent when performing a rollover or transfer of an IRA/401k as these transactions not performed correctly may be subjected to taxation and or penalties.  We strongly advise you to contact our IRA department or custodian services for further information. One of our representatives will be glad to answer any questions and make sure that ALL of your paperwork is filed accordingly to give you peace of mind.
+                    </p>
                 </div>
             </div>
         </section>

@@ -42,7 +42,7 @@
                     <div class="col-xs-12 col-sm-6">
                     <div class="wrapper" data-aos="fade-up" data-aos-delay="100">
                             <img src="../src/imgs/2_office.jpg" alt="office">
-                            <h2>Danbury</h2>
+                            <h2>Connecticut</h2>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6">
