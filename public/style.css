@@ -221,15 +221,12 @@ body {
         text-shadow: 1px 5px 1rem #222;
         font-size: 3.2rem; }
     .page .home .sec-frontpage .stock-chart-1 {
-      display: none; }
-      @media (min-width: 1200px) {
-        .page .home .sec-frontpage .stock-chart-1 {
-          display: block;
-          position: absolute;
-          width: 50%;
-          left: 50%;
-          top: 80%;
-          transform: translate(-50%, 0); } }
+      display: block;
+      position: absolute;
+      width: 50%;
+      left: 50%;
+      top: 80%;
+      transform: translate(-50%, 0); }
       .page .home .sec-frontpage .stock-chart-1 #marquee-container {
         padding: 1rem;
         border-radius: 3px; }
